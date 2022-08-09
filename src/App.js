@@ -106,10 +106,18 @@ function App() {
                 let result = eval(display);
                 if (result === undefined) {
                   setDisplay("");
-                } else if (display === "80085" || display === "58008") {
+                } else if (
+                  display === "8008" ||
+                  display === "80085" ||
+                  display === "58008" ||
+                  display === "5318008" ||
+                  display === "318008"
+                ) {
                   setDisplay("Oh, grow up.");
                 } else if (display === "69") {
                   setDisplay("Nice.");
+                } else if (display === "420") {
+                  setDisplay("BLAZE IT");
                 } else {
                   setDisplay(result.toString());
                 }
