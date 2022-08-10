@@ -49,7 +49,7 @@ function App() {
                 id={button === "." ? "decimalKey" : "num" + button}
                 onClick={
                   () =>
-                    display == { numerals } ||
+                    display === { numerals } ||
                     display === "*" ||
                     display === "/"
                       ? setDisplay(button)
@@ -80,7 +80,7 @@ function App() {
               onClick={() => {
                 if (
                   display === "" ||
-                  display[0] + display[1] + display[2] == "OwO"
+                  display[0] + display[1] + display[2] === "OwO"
                 ) {
                   setDisplay("UwU");
                 } else if (display === "UwU") {
