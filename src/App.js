@@ -25,7 +25,7 @@ function App() {
       setActive(true);
     }
     console.log(active);
-  });
+  }, [display, active]);
 
   // getRandomSexy(max);{
   //   return Math.floor(Math.random() * max);
